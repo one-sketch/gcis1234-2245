@@ -1,0 +1,404 @@
+h3{
+    color: #0484c9;
+    font-size: 1.4em;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    text-align: center;
+   
+    margin: 5px 0; /* Space around the title */
+    font-size: 1.6em; /* Slightly larger text size */
+    text-align: center; /* Center the title */
+    padding-bottom: 20px;
+
+}
+h2 {
+    margin: 5px 0; /* Space around the title */
+    font-size: 1.4em; /* Slightly larger text size */
+    text-align: center; /* Center the title */
+    padding-bottom: 20px;
+    margin-top: 50px;
+    color: #0484c9;
+  }
+
+.logo{
+    position: absolute;
+  top: 10px;
+  left: 10px;
+}
+
+
+  /* General styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f8f8f8; /* Light background */
+    color: #000; /* Default text color for light mode */
+    transition: background-color 0.3s, color 0.3s; /* Smooth transition */
+  }
+  
+  /* Define light and dark mode colors */
+  :root {
+    --background-color: #f8f8f8; /* Light background */
+    --text-color: #000; /* Default text color */
+    --navbar-background: #c8c9c9; /* Dark navbar */
+    --navbar-text-color: #fff; /* Light navbar text */
+    --button-background: #0484c9; /* Orange button */
+    --box-background: #fff; /* White background for boxes */
+    --box-border: #ccc; /* Light grey border */
+  }
+  
+  body.dark-mode {
+    --background-color: #121212; /* Dark background */
+    --text-color: #ffffff; /* Light text */
+    --navbar-background: #1f1f1f; /* Darker navbar */
+    --button-background: #ff6600; /* Keep button orange */
+    --box-background: #2c2c2c; /* Darker background for boxes */
+    --box-border: #444; /* Darker border */
+  }
+  
+  /* Navbar styles */
+  .navbar {
+    background-color: var(--navbar-background);
+    color: var(--navbar-text-color);
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .navbar-top,
+  .navbar-bottom {
+    display: flex;
+    justify-content: center;
+  }
+  
+  .navbar-links,
+  .navbar-actions {
+    list-style-type: none;
+    display: flex;
+    gap: 10px;
+  }
+  
+  
+  
+  
+  .navbar-links li,
+  .navbar-actions li {
+    padding: 0;
+    margin: 0;
+  }
+  
+  /* Link styles */
+  .navbar-links a {
+    text-decoration: none;
+    color: var(--navbar-text-color);
+    font-weight: bold;
+    transition: color 0.3s;
+  }
+  
+  .navbar-links a:hover {
+    color: #2f231c; /* Highlight color on hover */
+  }
+  
+  /* Button styles for navbar actions */
+  .button {
+    background-color: var(--button-background); /* Orange background for buttons */
+    padding: 10px 15px;
+    color: var(--navbar-text-color);
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 4px;
+    transition: background-color 0.3s;
+    margin-top: 20px;
+    margin-bottom: 20px;
+  }
+  
+  .button:hover {
+    background-color: #e65c0021; /* Darker orange on hover */
+  }
+  
+  #toggle-button {
+    margin-left: 20px; /* Push the button to the right */
+  }
+  
+
+  
+  .ins-h2{
+    font-size: 1.9em;
+  }
+  
+  
+ 
+  
+  /* Container for the week boxes */
+  .table-container {
+    display: flex; /* Align boxes horizontally */
+    justify-content: center; /* Center the boxes horizontally */
+    gap: 20px; /* Add spacing between the boxes */
+    padding: 20px; /* Optional: add padding around the container */
+    flex-wrap: wrap;
+  }
+  
+  .week-square {
+    background-color: var(--box-background); /* White background for boxes */
+    border: 1px solid var(--box-border); /* Light grey border */
+    border-radius: 20px; /* Rounded corners */
+    width: 200px; 
+    height: 200px; /* Fixed height to make squares */
+  
+    display: flex;
+    flex-direction: column;
+    justify-content: center; /* Center content vertically */
+    align-items: center; /* Center content horizontally */
+    text-align: center; /* Center text */
+    text-decoration: none; /* Remove underline from links */
+    color: var(--text-color); /* Default text color */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Add shadow */
+    transition: background-color 0.3s, transform 0.3s; /* Smooth background transition and scaling */
+  
+  }
+
+
+
+
+  .hw-s{
+    background-color: var(--box-background); /* White background for boxes */
+    border: 1px solid var(--box-border); /* Light grey border */
+    border-radius: 20px; /* Rounded corners */
+    width: 400px; 
+    height: auto; /* Fixed height to make squares */
+  
+    display: flex;
+    flex-direction: column;
+    justify-content: center; /* Center content vertically */
+    align-items: center; /* Center content horizontally */
+    text-align: center; /* Center text */
+    text-decoration: none; /* Remove underline from links */
+    color: var(--text-color); /* Default text color */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Add shadow */
+    transition: background-color 0.3s, transform 0.3s; /* Smooth background transition and scaling */
+  
+  
+  }
+  
+  .lab{
+    background-color: var(--box-background); /* White background for boxes */
+    border: 1px solid var(--box-border); /* Light grey border */
+    border-radius: 20px; /* Rounded corners */
+    width: 300px; 
+    height: 200px; /* Fixed height to make squares */
+  
+    display: flex;
+    flex-direction: column;
+    justify-content: center; /* Center content vertically */
+    align-items: center; /* Center content horizontally */
+    text-align: center; /* Center text */
+    text-decoration: none; /* Remove underline from links */
+    color: var(--text-color); /* Default text color */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Add shadow */
+    transition: background-color 0.3s, transform 0.3s; /* Smooth background transition and scaling */
+  
+  }
+  
+  
+  
+  
+  
+  
+  
+  
+  /* Adjust the iframe and move the other boxes out of view */
+  #iframe-container {
+    display: none;
+    margin-top: 20px;
+    width: 100%;
+    padding-right: 1500px;
+    padding-top: 500px;
+  }
+  
+  #pdf-iframe {
+    width: 800px;  /* Make iframe fill its container */
+    height: 600px;
+    border: none;
+    display: block;
+    margin-top: 10px;
+   
+  }
+  
+  .table-container {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    padding: 20px;
+    flex-wrap: wrap;
+    transition: all 0.3s ease; /* Smooth transition */
+  }
+  
+  
+  
+  /* Move the other boxes to the left and out of view */
+  .hw-s.open, .inside-square.open, .week-square.open {
+    transform: translateX(-100vw); /* Move boxes out of view to the left */
+    opacity: 0; /* Optional: make the boxes invisible */
+  }
+  
+  /* Make the other boxes return to normal when iframe is hidden */
+  .hw-s, .inside-square, .week-square {
+    transition: transform 0.3s ease, opacity 0.3s ease;
+  }
+  
+  .week-square, .hw-s, .inside-square {
+    transition: margin 0.3s ease;
+  }
+  
+  
+  .table-container > div {
+    transition: all 0.3s ease;
+  }
+  
+  
+  
+  
+  .txt{
+    font-size: 1.6em; /* Smaller text for links */
+    text-decoration-color: orange;
+    color: var(--text-color);
+  }
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  .inside-square{
+    background-color: var(--box-background); /* White background for boxes */
+    border: 1px solid var(--box-border); /* Light grey border */
+    border-radius: 20px; /* Rounded corners */
+    width: 430px; 
+    height: auto; /* Fixed height to make squares */
+  
+    display: flex;
+    flex-direction: column;
+    justify-content: center; /* Center content vertically */
+    align-items: center; /* Center content horizontally */
+    text-align: center; /* Center text */
+    text-decoration: none; /* Remove underline from links */
+    color: var(--text-color); /* Default text color */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Add shadow */
+    transition: background-color 0.3s, transform 0.3s; /* Smooth background transition and scaling */
+  
+    
+  }
+  
+  
+  .inside-rec1{
+    background-color: var(--box-background); /* White background for boxes */
+    border: 1px solid var(--box-border); /* Light grey border */
+    border-radius: 20px; /* Rounded corners */
+    width: 399px; /* Fixed width */
+    height: auto; /* Fixed height to make squares */
+    padding-left: 15px;
+  
+  
+    display: flex;
+    flex-direction: column;
+    justify-content: center; /* Center content vertically */
+    align-items: center; /* Center content horizontally */
+    text-align: center; /* Center text */
+    text-decoration: none; /* Remove underline from links */
+    color: var(--text-color); /* Default text color */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Add shadow */
+    transition: background-color 0.3s, transform 0.3s; /* Smooth background transition and scaling */
+  }
+  
+  
+  .week-square:hover {
+    background-color: #0484c9; /* Change background on hover */
+    color: white; /* Change text color on hover */
+    transform: scale(1.05); /* Slightly scale up on hover */
+    font-size: 19px;
+  }
+  .week-square:hover h2{
+    color:white;
+  }
+  .week-square h2 {
+    margin: 0; /* Remove default margin */
+    font-size: 1.5em; /* Increase font size for the week title */
+  }
+  
+  .links {
+    font-size: 1.6em; /* Smaller text for links */
+    text-decoration: underline;
+    text-decoration-color: orange;
+    color: var(--text-color);
+  }
+  
+  .links:hover {
+    background-color: #c8c9c9; /* Change background on hover */
+  }
+  
+  
+  
+  .collapse:hover {
+    color: black; /* Change color on hover for feedback */
+  }
+  
+  
+  .Note,
+  .list {
+    font-size: 20px; /* Font size for paragraphs */
+    line-height: 1.5; /* Improve readability */
+    margin-bottom: 15px; /* Space between paragraphs */
+    text-align: left;
+    padding-left: 10px;
+    color: var(--text-color); /* Default text color */
+  }
+  
+  
+  /* Dark mode specific styles */
+  body.dark-mode {
+    background-color: #121212; /* Dark background */
+    color: #ffffff; /* Light text */
+  }
+  
+  .navbar.dark-mode {
+    background-color: #1f1f1f; /* Darker navbar */
+  }
+  
+  .week-square.dark-mode,
+  .inside-square.dark-mode,
+  .hw-s.dark-mode,
+  .collapse.dark-mode {
+    background-color: #2c2c2c; /* Darker background for boxes in dark mode */
+    border: 1px solid #444; /* Darker border */
+  }
+  
+  .content {
+    background-color: #fff; /* Light background for content */
+    border: 1px solid #ccc; /* Light border */
+    transition: background-color 0.3s; /* Smooth transition */
+    display: none; /* Hide the content initially */
+    margin-top: 15px; /* Space above the content */
+    color:#000;
+  }
+  
+  .content.dark-mode {
+    background-color: #1e1e1e; /* Dark background for content */
+    border: 1px solid #444; /* Darker border for content */
+  }
+  
+  
+  .links {
+    color: #ff6600; /* Keep links orange */
+  }
+  .Note.dark-mode,
+  .list.dark-mode{
+    color: white;
+    background-color: #1e1e1e;
+  }
+  .Note,
+  .list {
+    color: black; /* Light text for notes and lists */
+  }
+  
