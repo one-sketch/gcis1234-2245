@@ -19,6 +19,28 @@ h2 {
     color: #0484c9;
   }
 
+.info{
+    padding-top: 30px;
+    color:rgb(40, 109, 22);
+    font-size: 30px;
+
+} 
+
+
+.info-p{
+    font-size: 26px;
+    color:rgb(40, 109, 22);
+    padding-bottom: 25px;
+
+}
+
+.u3{
+  font-size: 16px;
+}
+
+p{
+  font-size: 20px;
+}
 .logo{
     position: absolute;
   top: 10px;
@@ -120,13 +142,7 @@ body {
   }
   
 
-  
-  .ins-h2{
-    font-size: 1.9em;
-  }
-  
-  
- 
+   
   
   /* Container for the week boxes */
   .table-container {
@@ -156,53 +172,6 @@ body {
   
   }
 
-
-
-
-  .hw-s{
-    background-color: var(--box-background); /* White background for boxes */
-    border: 1px solid var(--box-border); /* Light grey border */
-    border-radius: 20px; /* Rounded corners */
-    width: 400px; 
-    height: auto; /* Fixed height to make squares */
-  
-    display: flex;
-    flex-direction: column;
-    justify-content: center; /* Center content vertically */
-    align-items: center; /* Center content horizontally */
-    text-align: center; /* Center text */
-    text-decoration: none; /* Remove underline from links */
-    color: var(--text-color); /* Default text color */
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Add shadow */
-    transition: background-color 0.3s, transform 0.3s; /* Smooth background transition and scaling */
-  
-  
-  }
-  
-  .lab{
-    background-color: var(--box-background); /* White background for boxes */
-    border: 1px solid var(--box-border); /* Light grey border */
-    border-radius: 20px; /* Rounded corners */
-    width: 300px; 
-    height: 200px; /* Fixed height to make squares */
-  
-    display: flex;
-    flex-direction: column;
-    justify-content: center; /* Center content vertically */
-    align-items: center; /* Center content horizontally */
-    text-align: center; /* Center text */
-    text-decoration: none; /* Remove underline from links */
-    color: var(--text-color); /* Default text color */
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Add shadow */
-    transition: background-color 0.3s, transform 0.3s; /* Smooth background transition and scaling */
-  
-  }
-  
-  
-  
-  
-  
-  
   
   
   /* Adjust the iframe and move the other boxes out of view */
@@ -255,20 +224,7 @@ body {
   }
   
   
-  
-  
-  .txt{
-    font-size: 1.6em; /* Smaller text for links */
-    text-decoration-color: orange;
-    color: var(--text-color);
-  }
-  
-  
-  
-  
-  
-  
-  
+
   
   
   .inside-square{
@@ -324,15 +280,10 @@ body {
   }
   .week-square h2 {
     margin: 0; /* Remove default margin */
-    font-size: 1.5em; /* Increase font size for the week title */
+    font-size: 1.9em; /* Increase font size for the week title */
   }
   
-  .links {
-    font-size: 1.6em; /* Smaller text for links */
-    text-decoration: underline;
-    text-decoration-color: orange;
-    color: var(--text-color);
-  }
+ 
   
   .links:hover {
     background-color: #c8c9c9; /* Change background on hover */
@@ -342,17 +293,6 @@ body {
   
   .collapse:hover {
     color: black; /* Change color on hover for feedback */
-  }
-  
-  
-  .Note,
-  .list {
-    font-size: 20px; /* Font size for paragraphs */
-    line-height: 1.5; /* Improve readability */
-    margin-bottom: 15px; /* Space between paragraphs */
-    text-align: left;
-    padding-left: 10px;
-    color: var(--text-color); /* Default text color */
   }
   
   
