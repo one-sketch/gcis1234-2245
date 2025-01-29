@@ -206,7 +206,7 @@ body {
     background-color: var(--box-background); /* White background for boxes */
     border: 1px solid var(--box-border); /* Light grey border */
     border-radius: 20px; /* Rounded corners */
-    width: 600px; 
+    width: auto; 
     height: 400px; /* Fixed height to make squares */
   
 
@@ -225,8 +225,18 @@ body {
   }
   
   .due{
-    font-size: 15px;
+    font-size: 19px;
     color:red;
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+
+  .assign:visited{
+    color:olivedrab;
+  }
+
+  .assign:hover{
+    background-color: rgba(128, 128, 128, 0.367);
   }
 
   
