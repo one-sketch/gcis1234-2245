@@ -240,7 +240,11 @@ header-container {
 }
 
 .assign:visited{
+  color:rgb(104, 146, 20);
+}
+.assign{
   color:olivedrab;
+
 }
 
 .assign:hover{
