@@ -21,7 +21,9 @@ h2 {
   padding-left: 20px;
   padding-right: 20px;
 }
-
+.ins-h2{
+  color: #109eea;
+}
 .info{
   padding-top: 30px;
   color:olivedrab;
@@ -335,6 +337,7 @@ body.dark-mode {
 
 .links {
   color: #0484c9; 
+  font-size: 25px;
 }
 .Note.dark-mode,
 .list.dark-mode{
