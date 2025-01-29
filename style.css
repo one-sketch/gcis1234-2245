@@ -131,6 +131,22 @@ body.dark-mode {
 }
 
 /* Button styles for navbar actions */
+header-container {
+  display: flex;
+  justify-content: center; /* Center the header */
+  align-items: flex-start; /* Align items to the top */
+  margin-top: 20px;
+  position: relative;
+}
+
+.button-container {
+  position: absolute;
+  top: 200px; /* Distance from the top */
+  left: 20px; /* Distance from the left */
+  display: flex;
+  gap: 10px; /* Space between the buttons */
+}
+
 .button {
   background-color: var(--button-background); /* Orange background for buttons */
   padding: 10px 15px;
@@ -139,9 +155,13 @@ body.dark-mode {
   font-weight: bold;
   border-radius: 4px;
   transition: background-color 0.3s;
-  margin-top: 20px;
-  margin-bottom: 20px;
 }
+
+.button a {
+  color: inherit; /* Inherit color from parent */
+  text-decoration: none; /* Remove underline */
+}
+
 
 .button:hover {
   background-color: #e65c0021; /* Darker orange on hover */
@@ -178,23 +198,8 @@ body.dark-mode {
 
 
 
-/* Adjust the iframe and move the other boxes out of view */
-#iframe-container {
-  display: none;
-  margin-top: 20px;
-  width: 100%;
-  padding-right: 1500px;
-  padding-top: 500px;
-}
 
-#pdf-iframe {
-  width: 800px;  /* Make iframe fill its container */
-  height: 600px;
-  border: none;
-  display: block;
-  margin-top: 10px;
- 
-}
+
 
 .table-container {
   display: flex;
@@ -314,9 +319,6 @@ i{
 
 
 
-.collapse:hover {
-  color: black; /* Change color on hover for feedback */
-}
 
 
 /* Dark mode specific styles */
@@ -331,25 +333,13 @@ body.dark-mode {
 
 .week-square.dark-mode,
 .inside-square.dark-mode,
-.hw-s.dark-mode,
-.collapse.dark-mode {
+.hw-s.dark-mode {
   background-color: #2c2c2c; /* Darker background for boxes in dark mode */
   border: 1px solid #444; /* Darker border */
 }
 
-.content {
-  background-color: #fff; /* Light background for content */
-  border: 1px solid #ccc; /* Light border */
-  transition: background-color 0.3s; /* Smooth transition */
-  display: none; /* Hide the content initially */
-  margin-top: 15px; /* Space above the content */
-  color:#000;
-}
 
-.content.dark-mode {
-  background-color: #1e1e1e; /* Dark background for content */
-  border: 1px solid #444; /* Darker border for content */
-}
+
 
 
 .links {
@@ -381,4 +371,9 @@ transition: background-color 0.3s, transform 0.3s;
 position: relative;
 
 }
-
+.units{
+  font-size: 70px ;
+  text-decoration: underline;
+  text-decoration-color: #0484c9;
+  padding-bottom: 90px;
+}
