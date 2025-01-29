@@ -152,13 +152,7 @@ body {
    
   
   /* Container for the week boxes */
-  .table-container {
-    display: flex; /* Align boxes horizontally */
-    justify-content: center; /* Center the boxes horizontally */
-    gap: 20px; /* Add spacing between the boxes */
-    padding: 20px; /* Optional: add padding around the container */
-    flex-wrap: wrap;
-  }
+ 
   
   .week-square {
     background-color: var(--box-background); /* White background for boxes */
@@ -208,27 +202,33 @@ body {
     transition: all 0.3s ease; /* Smooth transition */
   }
   
+  .hw-s{
+    background-color: var(--box-background); /* White background for boxes */
+    border: 1px solid var(--box-border); /* Light grey border */
+    border-radius: 20px; /* Rounded corners */
+    width: 600px; 
+    height: 400px; /* Fixed height to make squares */
+  
+
+    flex-wrap: wrap;
+    display: flex;
+    flex-direction: column;
+    justify-content: center; /* Center content vertically */
+    align-items: center; /* Center content horizontally */
+    text-align: center; /* Center text */
+    text-decoration: none; /* Remove underline from links */
+    color: var(--text-color); /* Default text color */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Add shadow */
+    transition: background-color 0.3s, transform 0.3s; /* Smooth background transition and scaling */
   
   
-  /* Move the other boxes to the left and out of view */
-  .hw-s.open, .inside-square.open, .week-square.open {
-    transform: translateX(-100vw); /* Move boxes out of view to the left */
-    opacity: 0; /* Optional: make the boxes invisible */
   }
   
-  /* Make the other boxes return to normal when iframe is hidden */
-  .hw-s, .inside-square, .week-square {
-    transition: transform 0.3s ease, opacity 0.3s ease;
+  .due{
+    font-size: 15px;
+    color:red;
   }
-  
-  .week-square, .hw-s, .inside-square {
-    transition: margin 0.3s ease;
-  }
-  
-  
-  .table-container > div {
-    transition: all 0.3s ease;
-  }
+
   
   
 
@@ -254,6 +254,9 @@ body {
     
   }
   
+i{
+    font-size: 15px;
+  }
   
   .inside-rec1{
     background-color: var(--box-background); /* White background for boxes */
@@ -337,7 +340,7 @@ body {
   
   
   .links {
-    color: #ff6600; /* Keep links orange */
+    color: #0484c9; 
   }
   .Note.dark-mode,
   .list.dark-mode{
@@ -348,4 +351,22 @@ body {
   .list {
     color: black; /* Light text for notes and lists */
   }
+  
+  .PBS{
+    background-color: var(--box-background);
+  border: 1px solid var(--box-border);
+  border-radius: 20px;
+  width: 300px;
+  height: 200px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: background-color 0.3s, transform 0.3s;
+  position: relative;
+  
+  }
+  
   

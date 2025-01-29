@@ -210,28 +210,10 @@ body {
   
   
   
-  /* Move the other boxes to the left and out of view */
-  .hw-s.open, .inside-square.open, .week-square.open {
-    transform: translateX(-100vw); /* Move boxes out of view to the left */
-    opacity: 0; /* Optional: make the boxes invisible */
-  }
-  
-  /* Make the other boxes return to normal when iframe is hidden */
-  .hw-s, .inside-square, .week-square {
-    transition: transform 0.3s ease, opacity 0.3s ease;
-  }
-  
   .week-square, .hw-s, .inside-square {
     transition: margin 0.3s ease;
   }
   
-  
-  .table-container > div {
-    transition: all 0.3s ease;
-  }
-  
-  
-
   
   
   .inside-square{
