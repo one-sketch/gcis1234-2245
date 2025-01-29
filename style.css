@@ -309,6 +309,11 @@ i{
   transform: scale(1.05); /* Slightly scale up on hover */
   font-size: 19px;
 }
+
+#gg:hover{
+  background-color: #b7b9b9;
+}
+
 .week-square:hover h2{
   color:white;
 }
