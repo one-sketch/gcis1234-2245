@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+
+        <html lang='en'>
+            <head>
+            <meta name="viewport" content="width=device-width, initial-scale=1.0">
+            <title> Style Guide</title>
+            <link rel="stylesheet" href="style.css">
+
+            <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Comic+Neue:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&family=Silkscreen&display=swap" rel="stylesheet">
+             <script src="sc.js"></script>   
+             <link rel="icon" type="image/png" sizes="48x48" href="img/se_logo_new.png">
+
+            <img src="img/se_logo_new.png" alt="RIT CS" class="logo">
+
+        </head>
+        <body>
+            <nav class="navbar">
+                <div class="navbar-top">
+                    
+                        
+                </div>
+                <h3>GCIS-123</h3>
+                <div class="navbar-bottom">
+                    <ul class="navbar-actions">
+                        <li><a href="https://mycourses.rit.edu/d2l/le/content/1135174/Home" class="button">MyCourses</a></li>
+                        <li><a href="#" class="button"> Syllabus</a></li>
+                      
+                        
+        
+                    </ul>
+                </div>
+            </nav>
+
+            <div class="header-container">
+                <div class="button-container">
+                    <button id="toggle-button" class="button">Dark Mode</button>
+                    <button class="button"><a href="index.html">Back</a></button>
+                </div>
+            </div>
+
+            <div class="code-example-container">
+                <h2 class="code-example-title">Python Style Guide Example</h2>
+                <p class="code-example-text">
+                    This is an example that follows the recommended style for Python programs in 
+                    <strong>Software Development & Problem Solving I</strong>. 
+                    The file comment should provide a general description of the program.
+                </p>
+            
+                <pre class="code-block">
+            <span class="comment">"""
+            This is an example that uses the recommended style for programs written in 
+            Python for Software Development & Problem Solving I.
+            
+            General considerations of style:
+              - Use fully-spelled out names for functions, variables, and parameters.
+              - The standard for Python is words_with_underscores. Do not use alternatingCamelCase.
+              - Write a file comment like this one.
+              - Every function should have a docstring.
+              - If the function declares parameters, they should be documented in the docstring.
+              - If the function returns a value, it should be documented in the docstring.
+              - Use inline comments only when necessary.
+            
+            author: GCCIS Faculty
+            """</span>
+            
+            <span class="keyword">import</span> math
+            <span class="keyword">import</span> random
+            
+            <span class="comment"># Global variables</span>
+            DAYS_IN_YEAR = <span class="number">365</span>
+            DAYS_IN_LEAP_YEAR = DAYS_IN_YEAR + <span class="number">1</span>
+            SHORTEST_MONTH = <span class="number">28</span>
+            
+            <span class="keyword">def</span> example_function():
+                <span class="docstring">"""
+                A docstring should be provided to explain the purpose of each function.
+                """</span>
+                <span class="function-call">print</span>(<span class="string">"An example function!"</span>)
+            
+            <span class="keyword">def</span> exponent(base, power):
+                <span class="docstring">"""
+                This function raises the base value to the specified power and returns the
+                result.
+            
+                Parameters:
+                    base: the base of the exponent (a number)
+                    power: the power to which the base should be raised (a number)
+            
+                Returns:
+                    The result of raising the base to the power (a number).
+                """</span>
+                result = math.pow(base, power) <span class="comment"># inline comments as needed</span>
+                <span class="keyword">return</span> result
+            
+            <span class="keyword">def</span> main():
+                <span class="docstring">"""
+                The main function should include any code to execute when the module is run.
+                """</span>
+                example_function()
+            
+                <span class="comment"># Prompt the user for the base and power</span>
+                base = <span class="function-call">float</span>(<span class="function-call">input</span>(<span class="string">"Enter base: "</span>))
+                power = <span class="function-call">float</span>(<span class="function-call">input</span>(<span class="string">"Enter exponent: "</span>))
+            
+                <span class="comment"># Calculate and print the result</span>
+                result = exponent(base, power)
+                <span class="function-call">print</span>(base, <span class="string">"^"</span>, power, <span class="string">"="</span>, result, sep=<span class="string">""</span>)
+            
+                <span class="function-call">print</span>(<span class="string">"Goodbye!"</span>)
+            
+            <span class="comment">'''
+            Ensures that, if this program is imported into another module, the main method 
+            will not be executed.
+            '''</span>
+            <span class="keyword">if</span> __name__ == <span class="string">"__main__"</span>:
+                main()
+                </pre>
+            </div>
+            
+
+
+        </body>
+        </html>

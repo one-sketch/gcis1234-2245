@@ -496,3 +496,97 @@ body.dark-mode .course-important {
 }
 
 
+/* Container for the code example */
+.code-example-container {
+  max-width: 900px;
+  margin: auto;
+  background: var(--box-background);
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+/* Title for the code example */
+.code-example-title {
+  font-size: 1.8em;
+  color: #0484c9;
+  text-align: center;
+  margin-bottom: 15px;
+}
+
+/* Explanation text */
+.code-example-text {
+  font-size: 18px;
+  line-height: 1.6;
+  color: var(--text-color);
+  margin-bottom: 10px;
+}
+
+/* Code block */
+.code-block {
+  background-color: #1e1e1e;
+  color: #dcdcdc;
+  font-family: "Courier New", monospace;
+  font-size: 16px;
+  padding: 15px;
+  border-radius: 5px;
+  white-space: pre-wrap;
+  overflow-x: auto;
+  border-left: 5px solid #0484c9;
+}
+
+/* Syntax highlighting */
+.keyword {
+  color: #569cd6; /* Blue for keywords like def, return, if */
+  font-weight: bold;
+}
+
+.function-call {
+  color: #dcdcaa; /* Yellow for function calls like print, input */
+}
+
+.string {
+  color: #ce9178; /* Orange for strings */
+}
+
+.comment {
+  color: #6a9955; /* Green for comments */
+  font-style: italic;
+}
+
+.docstring {
+  color: #d4d4d4; /* Light gray for docstrings */
+  font-style: italic;
+}
+
+.number {
+  color: #b5cea8; /* Light green for numbers */
+}
+
+/* Adjustments for dark mode */
+body.dark-mode .code-block {
+  background-color: #252526;
+  color: #d4d4d4;
+  border-left: 5px solid #109eea;
+}
+
+body.dark-mode .keyword {
+  color: #569cd6;
+}
+
+body.dark-mode .string {
+  color: #ce9178;
+}
+
+body.dark-mode .comment {
+  color: #6a9955;
+}
+
+body.dark-mode .docstring {
+  color: #d4d4d4;
+}
+
+body.dark-mode .number {
+  color: #b5cea8;
+}
