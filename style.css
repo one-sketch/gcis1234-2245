@@ -135,11 +135,11 @@ body.dark-mode {
 }
 
 /* Button styles for navbar actions */
-header-container {
+.header-container {
   display: flex;
   justify-content: center; /* Center the header */
   align-items: flex-start; /* Align items to the top */
-  margin-top: 20px;
+  margin-top: 40px;
   position: relative;
 }
 
@@ -371,3 +371,124 @@ position: relative;
   text-decoration-color: #0484c9;
   padding-bottom: 90px;
 }
+
+/* Main container */
+.course-container {
+
+  max-width: 900px;
+  margin: auto;
+  background: var(--box-background);
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+/* Headings */
+.course-title {
+  font-size: 2em;
+  color: #0484c9;
+  text-align: center;
+}
+
+.course-heading {
+  font-size: 1.9em;
+  color: #0484c9;
+  text-align: center;
+}
+
+.course-subheading {
+  font-size: 1.6em;
+  color: #109eea;
+  text-align: center;
+}
+
+/* Sections */
+.course-section {
+  padding-top: 40px;
+  margin-bottom: 20px;
+  padding: 15px;
+  border-left: 5px solid #0484c9;
+  background: #eef3ff;
+  border-radius: 5px;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+body.dark-mode .course-section {
+  background: #2c2c2c;
+  border-left: 5px solid #109eea;
+}
+
+/* Paragraphs */
+.course-text {
+  font-size: 18px;
+  line-height: 1.6;
+}
+
+/* Lists */
+.course-list {
+  font-size: 18px;
+  line-height: 1.6;
+  padding-left: 20px;
+}
+
+.course-list li {
+  margin-bottom: 8px;
+}
+
+body.dark-mode .course-list {
+  color: white;
+}
+
+/* Tables */
+.course-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 15px;
+  background: var(--box-background);
+}
+
+.course-table th, .course-table td {
+  border: 1px solid #0484c9;
+  padding: 10px;
+  text-align: left;
+}
+
+.course-table th {
+  background: #0484c9;
+  color: white;
+}
+
+.course-table tr:nth-child(even) {
+  background-color: rgba(4, 132, 201, 0.1);
+}
+
+body.dark-mode .course-table tr:nth-child(even) {
+  background-color: rgba(4, 132, 201, 0.2);
+}
+
+/* Important alert boxes */
+.course-important {
+  background-color: rgba(4, 132, 201, 0.1);
+  padding: 10px;
+  border-left: 5px solid #0484c9;
+  border-radius: 5px;
+  font-size: 18px;
+}
+
+body.dark-mode .course-important {
+  background-color: rgba(4, 132, 201, 0.2);
+  color: white;
+}
+
+/* Links */
+.course-link {
+  color: #0484c9;
+  font-size: 18px;
+  font-weight: bold;
+  text-decoration: none;
+  transition: color 0.3
+
+}
+
+
