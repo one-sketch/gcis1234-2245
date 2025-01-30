@@ -145,8 +145,8 @@ body.dark-mode {
 
 .button-container {
   position: absolute;
-  top: 200px; /* Distance from the top */
-  left: 20px; /* Distance from the left */
+  top: 10px; /* Distance from the top */
+  left: 10px; /* Distance from the left */
   display: flex;
   gap: 10px; /* Space between the buttons */
 }
