@@ -146,7 +146,7 @@ body.dark-mode {
 .button-container {
   position: absolute;
   top: 10px; /* Distance from the top */
-  left: 10px; /* Distance from the left */
+  left: 0px; /* Distance from the left */
   display: flex;
   gap: 10px; /* Space between the buttons */
 }
@@ -375,7 +375,7 @@ position: relative;
 /* Main container */
 .course-container {
 
-  max-width: 900px;
+  max-width: 1020px;
   margin: auto;
   background: var(--box-background);
   padding: 20px;
@@ -395,6 +395,10 @@ position: relative;
   font-size: 1.9em;
   color: #0484c9;
   text-align: center;
+}
+
+.s-hw{
+  width: 700px;
 }
 
 .course-subheading {
